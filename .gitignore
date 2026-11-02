@@ -1,0 +1,10 @@
+# Archivos que NO se suben a GitHub
+.tox/
+env-tox/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+# Modelo entrenado (pesa ~36 MB; se genera con tox run -e train)
+package-src/model/trained/*.pkl
+# Nota: la carpeta dist/ SI se sube, para tener el .whl en el computador local (paso 4.7)
